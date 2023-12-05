@@ -5,7 +5,7 @@ metadata:
     app: solar-system
   name: solar-system
 spec:
-  replicas: 5
+  replicas: 1
   selector:
     matchLabels:
       app: solar-system
@@ -16,7 +16,7 @@ spec:
         app: solar-system
     spec:
       containers:
-      - image: mdhack/strategy:v1
+      - image: mdhack/strategy:v2
         name: solar-system
         imagePullPolicy: Always
         ports: 
